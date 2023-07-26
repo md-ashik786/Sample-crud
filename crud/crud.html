@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form onsubmit="event.preventDefault();"  autocomplete="off">
+        <div class="flex">
+            <div class="details">
+                <div class="ei">Employee_id:</div>
+                <input type="text" name="ei" id="ei" placeholder="Enter Your Employee_id.">
+                <div class="fn">Full_Name:</div>
+                <input type="text" name="fn" id="fn" placeholder="Enter Your Full Name.">
+                <div class="cn">Company_Name:</div>
+                <input type="text" name="cn" id="cn" placeholder="Enter Your Company Name.">
+                <div class="sal">Salary:</div>
+                <input type="number" name="sal" id="sal" placeholder="Enter Your Salary.">
+                <div class="suub">
+                    <input onclick="sub();" type="submit" value="Submit" class="submit">
+                </div>
+                <div id="msg"></div>
+    </form>
+    </div>
+    <div class="output">
+        <table id="table">
+            <tr class="main">
+                <td class="username">
+                    <h2>Employye_id</h2>
+                </td>
+                <td class="pass">
+                    <h2>Full_Name</h2>
+                </td>
+                <td class="web">
+                    <h2>C_Name</h2>
+                </td>
+                <td>
+                    <h2>Salary</h2>
+                </td>
+                <td>
+                    <h2>Action</h2>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
